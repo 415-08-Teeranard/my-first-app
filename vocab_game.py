@@ -24,7 +24,7 @@ def reset_game():
 # 📌 ฟังก์ชัน MessageBox (Dialog)
 # ----------------------------------------------------
 @st.dialog("📊 สรุปผลการเล่นเกม")
-def show_result_dialog(ans1, ans2):
+def show_result_dialog(ans1, ans2, ans3):
     st.balloons()
     score = 0
 
@@ -89,7 +89,7 @@ ans2 = st.text_input(
     value=st.session_state.ans2_val,
 )
 ans3 = st.text_input(
-    "ข้อ 3: Monkeys love to eat 'b _ _ _ _ a'. 🥗",
+    "ข้อ 3: Monkeys love to eat 'b _ _ _ _ a'. 🍌",
     value=st.session_state.ans3_val,
 )
 # อัปเดตค่าล่าสุดเข้าตัวแปร
